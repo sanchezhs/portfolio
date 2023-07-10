@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
 
 export function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
