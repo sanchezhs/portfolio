@@ -43,11 +43,11 @@ export function Contact() {
           EMAIL_JS.PUBLIC_KEY
         )
         .then(
-          (result) => {
+          (_) => {
             setSuccess(true);
             setError(false);
           },
-          (error) => {
+          (_) => {
             setError(false);
             setSuccess(false);
           }
