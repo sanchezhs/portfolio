@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import ProjectCard from "./ProjectCard";
+import DesktopImg from "../../assets/projects/arch.png";
+import QuantumSolverImg from "../../assets/projects/quantum.png";
+import PortfolioImg from "../../assets/projects/portfolio.png";
 
 export type Project = {
   title: string;
@@ -39,21 +42,21 @@ export function Projects() {
       description:
         "My desktop is running Arch Linux with XMonad as my window manager. I have configured my desktop to be as minimal as possible, with a focus on productivity and efficiency. Most of the configuration is written in Haskell and Bash scripts. I love the ability to fully customize my desktop to my liking.",
       techsUsed: ["Linux", "Haskell", "Bash Scripting"],
-      image: "./src/assets/projects/arch.png",
+      image: DesktopImg,
     },
     {
       title: "Quantum Solver",
       description:
         "This was my final grade project, a website that solves Integer Lineal Problems using QAOA, a quantum algorithm based on quantum gates computers. The website was built using Django and React, and the quantum part was done using Qiskit.",
       techsUsed: ["Django", "React", "Python", "Qiskit"],
-      image: "./src/assets/projects/quantum.png",
+      image: QuantumSolverImg,
     },
     {
       title: "Portfolio",
       description:
         "This is my portfolio, a website built using React and TailwindCSS. I wanted to build a website that was simple, minimal, and easy to navigate. I also wanted to learn TailwindCSS, so I decided to use it for this project.",
       techsUsed: ["React", "TailwindCSS"],
-      image: "./src/assets/projects/portfolio.png",
+      image: PortfolioImg,
     },
   ];
   
