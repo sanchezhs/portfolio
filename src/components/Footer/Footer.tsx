@@ -14,7 +14,7 @@ export function Footer() {
             >
                 icons8
             </a>{" "}
-            from{" "}
+            and{" "}
             <a
                 href="https://www.svgrepo.com/"
                 title="Svgrepo"
