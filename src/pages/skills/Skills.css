@@ -18,11 +18,15 @@
     color: var(--text-secondary);
 }
 
+.btn {
+  --bs-btn-border-radius: 0 !important;
+}
+
 /* Category Buttons */
 .btn-group-container .btn {
     background-color: var(--button-background);
     color: var(--button-text);
-    border: none;
+    border: 5px;
     transition: background-color 0.3s ease;
 }
 

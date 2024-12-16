@@ -88,7 +88,10 @@ function Skills() {
       {/* Category Buttons */}
       <Row>
         <Col className="d-flex justify-content-center">
-          <ButtonGroup aria-label="Skill categories">
+          <ButtonGroup
+            aria-label="Skill categories"
+            className="d-flex flex-wrap justify-content-center w-100"
+          >
             {Object.values(Category).map((category) => (
               <Button
                 key={category}
@@ -96,7 +99,8 @@ function Skills() {
                   selectedCategory === category ? 'primary' : 'outline-primary'
                 }
                 onClick={() => setSelectedCategory(category)}
-                className="mx-1 d-flex align-items-center"
+                className="m-1 d-flex align-items-center w-100"
+                style={{ flex: '1 1 auto', maxWidth: '200px' }}
               >
                 {categoryIcons[category]}
                 <span className="ms-2">{category}</span>
@@ -105,6 +109,27 @@ function Skills() {
           </ButtonGroup>
         </Col>
       </Row>
+
+
+      {/* <Row> */}
+      {/*   <Col className="d-flex justify-content-center"> */}
+      {/*     <ButtonGroup aria-label="Skill categories"> */}
+      {/*       {Object.values(Category).map((category) => ( */}
+      {/*         <Button */}
+      {/*           key={category} */}
+      {/*           variant={ */}
+      {/*             selectedCategory === category ? 'primary' : 'outline-primary' */}
+      {/*           } */}
+      {/*           onClick={() => setSelectedCategory(category)} */}
+      {/*           className="mx-1 d-flex align-items-center" */}
+      {/*         > */}
+      {/*           {categoryIcons[category]} */}
+      {/*           <span className="ms-2">{category}</span> */}
+      {/*         </Button> */}
+      {/*       ))} */}
+      {/*     </ButtonGroup> */}
+      {/*   </Col> */}
+      {/* </Row> */}
 
       <Row className="justify-content-center">
         <Col md={8}>
