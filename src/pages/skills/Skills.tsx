@@ -13,6 +13,7 @@ import {
   FaDatabase,   // Databases
   FaTools       // Others
 } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 import './Skills.css';
 
@@ -66,6 +67,11 @@ const categoryIcons: Record<Category, JSX.Element> = {
   [Category.Others]: <FaTools size={22} />
 };
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 function Skills() {
   const [selectedCategory, setSelectedCategory] = useState<Category>(Category.Languages);
 
@@ -105,26 +111,38 @@ function Skills() {
           <Card className="skills-card shadow-sm">
             <Card.Body>
               <div className="d-flex flex-wrap justify-content-center mt-3">
-                {skillsData[selectedCategory].map((skill) => {
+                {skillsData[selectedCategory].map((skill, index) => {
                   const iconClass = deviconClasses[skill];
                   const hasIcon = iconClass && iconClass.trim() !== '';
 
                   return (
-                    <Card
+                    <motion.div
                       key={skill}
-                      className="skill-card shadow-sm border m-2"
-                      style={{ width: '8rem', borderRadius: '0.5rem' }}
+                      className="m-2"
+                      variants={cardVariants}
+                      initial="hidden"
+                      animate="visible"
+                      transition={{
+                        delay: index * 0.1,
+                        duration: 0.4,
+                      }}
                     >
-                      <Card.Body className="text-center p-2">
-                        {hasIcon ? (
-                          <i className={iconClass} style={{ fontSize: '2rem' }} />
-                        ) : (
-                          <Card.Title as="h6" className="mt-2 mb-0">
-                            {skill}
-                          </Card.Title>
-                        )}
-                      </Card.Body>
-                    </Card>
+                      <Card
+                        key={skill}
+                        className="skill-card shadow-sm border m-2"
+                        style={{ width: '8rem', borderRadius: '0.5rem' }}
+                      >
+                        <Card.Body className="text-center p-2">
+                          {hasIcon ? (
+                            <i className={iconClass} style={{ fontSize: '2rem' }} />
+                          ) : (
+                            <Card.Title as="h6" className="mt-2 mb-0">
+                              {skill}
+                            </Card.Title>
+                          )}
+                        </Card.Body>
+                      </Card>
+                    </motion.div>
                   );
                 })}
               </div>

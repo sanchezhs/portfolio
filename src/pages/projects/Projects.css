@@ -18,7 +18,6 @@
  color: var(--text-secondary);
 }
 
-
 .card-text{
   color: var(--text-secondary);
 }
@@ -32,6 +31,7 @@
   background-color: var(--accent-hover);
 }
 
+.card,
 .project-card {
   background: var(--background);
   color: var(--text-primary);

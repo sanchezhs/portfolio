@@ -1,9 +1,5 @@
 @import url('../../styles/var.css');
 
-.card {
-  all: unset;
-}
-
 /* Global Styles */
 .skills-container {
     background-color: var(--background);
