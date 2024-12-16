@@ -14,17 +14,6 @@ function App() {
         </div>
         <Footer />
       </Router>
-      {/* <Router> */}
-      {/*   <CustomNavbar /> */}
-      {/*   <div style={{ marginTop: '80px', padding: '20px' }} > */}
-      {/*     <Routes location={location}> */}
-      {/*       {/* Route for Home */}
-      {/*       <Route index path="/" element={<Home />} /> */}
-      {/*       <Route path="/projects" element={<Projects />} /> */}
-      {/*     </Routes> */}
-      {/*   </div> */}
-      {/*   <Footer /> */}
-      {/* </Router > */}
     </>
   );
 }

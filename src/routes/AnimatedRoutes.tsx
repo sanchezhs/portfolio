@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Home from '../pages/home/Home';
 import Projects from '../pages/projects/Projects';
@@ -64,7 +64,7 @@ function AnimatedRoutes() {
             </motion.div>
           }
         />
-
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AnimatePresence>
   );
