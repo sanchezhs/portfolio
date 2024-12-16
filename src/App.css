@@ -1,0 +1,37 @@
+@import url('./styles/var.css');
+
+/*#root {*/
+/*  max-width: 1280px;*/
+/*  margin: 0 auto;*/
+/*  padding: 2rem;*/
+/*  text-align: center;*/
+/*}*/
+
+
+body {
+   margin-bottom: 60px;
+  background-color: var(--background);
+}
+/* Animación de desvanecimiento */
+.fade-enter {
+  opacity: 0; /* Página inicial invisible */
+  transform: translateY(20px); /* Ligeramente desplazada */
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease, transform 300ms ease; /* Animación suave */
+}
+
+.fade-exit {
+  opacity: 1; /* Página actual visible */
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px); /* Desplaza hacia arriba al salir */
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+

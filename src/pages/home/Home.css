@@ -1,0 +1,130 @@
+@import url('../../styles/var.css');
+
+.home-title-col {
+  text-align: start;
+  margin-top: 20px; 
+}
+
+.home-title-col h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem; 
+  font-weight: bold;
+  margin: 0;
+}
+
+.home-title-col h2 {
+  font-family: 'Poppins';
+  font-weight: bolder;
+  color: var(--accent);
+}
+
+.home-container {
+  background: linear-gradient(135deg, var(--background), var(--background-secondary));
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+.home-container h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.btn-outline-primary {
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--accent-hover) !important;
+}
+
+.dark-text  {
+  color: var(--text-primary);
+}
+
+
+.home-container p {
+  color: var(--text-secondary);
+}
+
+.home-card {
+  background-color: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.home-card .fw-bold {
+  color: #ffffff;
+}
+
+.home-card .text-muted {
+  color: #a5a5a5;
+}
+
+.btn-outline-primary {
+  color: #82aaff;
+  border-color: #82aaff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #82aaff;
+  color: #121212;
+  border-color: #82aaff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .home-card {
+    margin-bottom: 20px;
+  }
+}
+
+.social-button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-button .me-2 {
+  margin-right: 8px; 
+}
+
+.social-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-button.btn-primary {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.social-button.btn-primary:hover {
+  background-color: #005582;
+}
+
+.social-button.btn-dark {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.social-button.btn-dark:hover {
+  background-color: #1b1b1b;
+}
+

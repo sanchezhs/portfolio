@@ -1,0 +1,56 @@
+:root {
+    /* Tema Claro (Opcional, para referencia) */
+    --background: #f2f2f2;
+    --background-secondary: #e0e0e0;
+    --text-primary: #0f0f0f;
+    --text-secondary: #4e4e4e;
+    --accent: #1DB954; /* Verde Spotify */
+    --accent-hover: #17a44a; 
+    --border: #1f1e1e;
+    --shadow: 7px 15px 13px -4px #00000056;
+    
+    /* Colores Adicionales */
+    --button-background: var(--accent);
+    --button-text: #ffffff;
+    --link: var(--accent);
+    --link-hover: var(--accent-hover);
+}
+
+[data-theme='dark'] {
+    /* Tema Oscuro inspirado en Spotify */
+    --background: #121212; /* Fondo principal oscuro */
+    --background-secondary: #1e1e1e; /* Fondo secundario ligeramente más claro */
+    --text-primary: #FFFFFF; /* Texto principal blanco */
+    --text-secondary: #B3B3B3; /* Texto secundario gris claro */
+    --accent: #1DB954; /* Verde Spotify */
+    --accent-hover: #1ed760; /* Verde más claro al pasar el mouse */
+    --border: #282828; /* Bordes gris oscuro */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    
+    /* Colores Adicionales */
+    --button-background: var(--accent);
+    --button-text: #ffffff;
+    --link: #1DB954;
+    --link-hover: #1ed760;
+    
+    /* Colores Complementarios */
+    --success: #1DB954; /* Para mensajes de éxito */
+    --warning: #ffcc00; /* Para advertencias */
+    --error: #e0245e; /* Para errores */
+    
+    /* Elementos Interactivos */
+    --navbar-background: #181818; /* Fondo de la barra de navegación */
+    --sidebar-background: #181818; /* Fondo de la barra lateral */
+    --card-background: #282828; /* Fondo de tarjetas o componentes */
+    
+    /* Tipografía */
+    --font-color: #FFFFFF;
+    --font-color-secondary: #B3B3B3;
+    
+    /* Otros */
+    --icon-color: #B3B3B3;
+    --icon-hover-color: var(--accent);
+}
+
+
+

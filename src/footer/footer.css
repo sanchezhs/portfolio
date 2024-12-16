@@ -1,0 +1,29 @@
+@import url('../styles/var.css');
+
+footer {
+    background-color: var(--navbar-background);
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+.footer-link {
+  color: #ffffff; 
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+}
+
+.footer-link svg {
+  vertical-align: middle;
+}
+

@@ -1,0 +1,63 @@
+@import url('../../styles/var.css');
+
+
+.projects-container {
+  background: linear-gradient(135deg, var(--background), var(--background-secondary));
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+  /*font-family: 'Poppins', sans-serif;*/
+}
+
+.projects-container h1 {
+  font-size: 3rem; 
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.projects-container p {
+ color: var(--text-secondary);
+}
+
+
+.card-text{
+  color: var(--text-secondary);
+}
+
+.btn-primary {
+  background-color: var(--button-background);
+  border: var(--button-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.project-card {
+  background: var(--background);
+  color: var(--text-primary);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.project-carousel-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para texto */
+  border-radius: 10px;
+  padding: 10px;
+}
+

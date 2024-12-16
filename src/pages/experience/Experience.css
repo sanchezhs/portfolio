@@ -1,0 +1,116 @@
+@import url('../../styles/var.css');
+
+
+.experience-container {
+  background: linear-gradient(135deg, var(--background), var(--background-secondary));
+  color: var(--text-primary);
+  position: relative;
+}
+
+.experience-container p {
+  color: var(--text-secondary);
+}
+
+.experience-container h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem; 
+  font-weight: bold;
+  margin: 0;
+  color: var(--accent);
+}
+
+.experience-card {
+  background-color: var(--card-background);
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--text-primary);
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px var(--shadow);
+}
+
+.experience-card .fw-bold {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.experience-card .text-muted {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: var(--border);
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.timeline-item.left {
+  transform: translateX(-50%);
+  text-align: right;
+}
+
+.timeline-item.right {
+  transform: translateX(50%);
+  text-align: left;
+}
+
+.timeline-item .experience-card {
+  margin: 0 auto;
+}
+
+.experience-card .btn {
+  background-color: var(--accent);
+  color: var(--button-text);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.experience-card .btn:hover {
+  background-color: var(--accent-hover);
+  color: var(--button-text);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    transform: none;
+    text-align: left;
+  }
+
+  .timeline-item .experience-card {
+    margin-left: 20px;
+  }
+}
+
