@@ -28,7 +28,7 @@ function CustomNavbar() {
     >
       <Container fluid className='justify-content-center'>
         {/* Collapse button for small devices */}
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className='navbar-dark' />
 
         {/* Collapse content container */}
         <Navbar.Collapse id="responsive-navbar-nav">

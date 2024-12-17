@@ -1,6 +1,5 @@
 @import url('../styles/var.css');
 
-
 .custom-nav {
   background-color: var(--navbar-background);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
