@@ -70,7 +70,7 @@ function Projects() {
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text>{project.subtitle}</Card.Text>
-                <Button variant="primary" href={project.link}>
+                <Button variant="primary" href={project.link} target='_blank' rel='noopener noreferrer'>
                   View Details
                 </Button>
               </Card.Body>
