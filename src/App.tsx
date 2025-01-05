@@ -4,6 +4,7 @@ import { HashRouter } from 'react-router-dom';
 import AnimatedRoutes from './routes/AnimatedRoutes';
 import Footer from './footer/Footer';
 
+// HashRouter instead of BrowserRouter because of gh-pages>
 function App() {
   return (
     <>
