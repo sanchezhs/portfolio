@@ -1,6 +1,6 @@
 import './App.css'
 import CustomNavbar from './navbar/CustomNavbar';
-import { HashRouter, BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import AnimatedRoutes from './routes/AnimatedRoutes';
 import Footer from './footer/Footer';
 
