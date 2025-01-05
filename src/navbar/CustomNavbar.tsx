@@ -17,7 +17,6 @@ function CustomNavbar() {
     </Tooltip>
   );
   const getTooltipPlacement = () => (isExpanded ? 'right' : 'bottom');
-  console.log(isExpanded);
 
   return (
     <Navbar

@@ -7,7 +7,7 @@ import Footer from './footer/Footer';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename='/portfolio/'>
         <CustomNavbar />
         <div style={{ marginTop: '80px', padding: '20px' }}>
           <AnimatedRoutes />

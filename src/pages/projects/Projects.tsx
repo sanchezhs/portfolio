@@ -6,48 +6,78 @@ import p3Img1 from '../../assets/solver1.png';
 import p4Img1 from '../../assets/julia.png';
 import p5Img1 from '../../assets/cgc.png';
 import p6Img1 from '../../assets/blockchain.png';
+import p7Img1 from '../../assets/nn.jpg';
+import p8Img1 from '../../assets/kmeans.png';
+import p9Img1 from '../../assets/httpserver.png';
+
+let projectId = 1;
+function id() {
+  return projectId++;
+}
 
 const projects = [
   {
-    id: 1,
+    id: id(),
     title: 'Particle Simulator',
     subtitle: 'Newtonian particle simulator written in C with support for web using WebAssembly',
     image: p1Img1,
     link: 'https://github.com/sanchezhs/particle-simulation',
   },
   {
-    id: 2,
+    id: id(),
     title: 'Snake Game',
     subtitle: 'Classic snake game written in C using Raylib',
     image: p2Img1,
     link: 'https://github.com/sanchezhs/csnake',
   },
   {
-    id: 3,
+    id: id(),
     title: 'Quantum Linear Programming Solver',
     subtitle: 'Quantom algorithm implementation using Qiskit for solving ILP problems written in Python',
     image: p3Img1,
     link: 'https://github.com/sanchezhs/Quantum-Linear-Programming-Solver',
   },
   {
-    id: 4,
+    id: id(),
     title: 'Julia Sets',
     subtitle: 'Desktop application written in Python to compute and visualize Julia Sets',
     image: p4Img1,
     link: 'https://github.com/sanchezhs/julia-sets',
   },
   {
-    id: 5,
+    id: id(),
     title: 'Graphic Calculator',
     subtitle: 'A program that parse and plot a function entered by the command line',
     image: p5Img1,
     link: 'https://github.com/sanchezhs/cgc',
-  }, {
-    id: 6,
+  },
+  {
+    id: id(),
     title: 'Blockchain',
     subtitle: 'Blockchain implementation in C using Merkle Trees and SHA-513',
     image: p6Img1,
     link: 'https://github.com/sanchezhs/cblockchain',
+  },
+  {
+    id: id(),
+    title: 'Neural Network',
+    subtitle: 'Neural Network implementation in C',
+    image: p7Img1,
+    link: 'https://github.com/sanchezhs/nn',
+  },
+  {
+    id: id(),
+    title: 'Kmeans',
+    subtitle: 'Kmeans implementation in C',
+    image: p8Img1,
+    link: 'https://github.com/sanchezhs/kmeans',
+  },
+  {
+    id: id(),
+    title: 'HTTP Server',
+    subtitle: 'HTTP Server implementation in C',
+    image: p9Img1,
+    link: 'https://github.com/sanchezhs/http-server',
   },
 ];
 
