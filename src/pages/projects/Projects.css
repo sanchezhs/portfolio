@@ -56,8 +56,17 @@
 }
 
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para texto */
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   padding: 10px;
 }
 
+.badge-custom-category {
+  background-color: #1c1c1c !important;
+  color: var(--button-text);
+}
+
+.badge-custom-language {
+  background-color: #1c1c1c !important;
+  color: var(--button-text);
+}

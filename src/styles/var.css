@@ -26,7 +26,8 @@
     --accent-hover: #1ed760; /* Verde más claro al pasar el mouse */
     --border: #282828; /* Bordes gris oscuro */
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra sutil */
-    
+    --bagde-background: #535353; /* Fondo de las etiquetas */
+
     /* Colores Adicionales */
     --button-background: var(--accent);
     --button-text: #ffffff;

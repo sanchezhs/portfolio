@@ -1,4 +1,5 @@
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import Project from './Project';
 import './Projects.css';
 import p1Img1 from '../../assets/particlesim1.png';
 import p2Img1 from '../../assets/snakegame1.png';
@@ -10,76 +11,81 @@ import p7Img1 from '../../assets/nn.jpg';
 import p8Img1 from '../../assets/kmeans.png';
 import p9Img1 from '../../assets/httpserver.png';
 
-let projectId = 1;
-function id() {
-  return projectId++;
-}
-
 const projects = [
   {
-    id: id(),
     title: 'Particle Simulator',
     subtitle: 'Newtonian particle simulator written in C with support for web using WebAssembly',
     image: p1Img1,
     link: 'https://github.com/sanchezhs/particle-simulation',
+    categories: ['Simulation', 'Physics', 'Web Development'],
+    languages: ['C', 'WebAssembly']
   },
   {
-    id: id(),
     title: 'Snake Game',
-    subtitle: 'Classic snake game written in C using Raylib',
+    subtitle: 'Classic snake game written in C using Raylib. This project demonstrates basic game development concepts and graphics rendering.',
     image: p2Img1,
     link: 'https://github.com/sanchezhs/csnake',
+    categories: ['Game', 'Entertainment'],
+    languages: ['C']
   },
   {
-    id: id(),
     title: 'Quantum Linear Programming Solver',
     subtitle: 'Quantom algorithm implementation using Qiskit for solving ILP problems written in Python',
     image: p3Img1,
     link: 'https://github.com/sanchezhs/Quantum-Linear-Programming-Solver',
+    categories: ['Quantum Computing', 'Optimization', 'Web Development'],
+    languages: ['Python', 'Qiskit']
   },
   {
-    id: id(),
     title: 'Julia Sets',
     subtitle: 'Desktop application written in Python to compute and visualize Julia Sets',
     image: p4Img1,
     link: 'https://github.com/sanchezhs/julia-sets',
+    categories: ['Mathematics', 'Visualization', 'Desktop Application'],
+    languages: ['Python']
   },
   {
-    id: id(),
     title: 'Graphic Calculator',
     subtitle: 'A program that parse and plot a function entered by the command line',
     image: p5Img1,
     link: 'https://github.com/sanchezhs/cgc',
+    categories: ['Mathematics', 'Utilities', 'Command Line'],
+    languages: ['C']
   },
   {
-    id: id(),
     title: 'Blockchain',
     subtitle: 'Blockchain implementation in C using Merkle Trees and SHA-513',
     image: p6Img1,
     link: 'https://github.com/sanchezhs/cblockchain',
+    categories: ['Cryptography', 'Blockchain'],
+    languages: ['C']
   },
   {
-    id: id(),
     title: 'Neural Network',
     subtitle: 'Neural Network implementation in C',
     image: p7Img1,
     link: 'https://github.com/sanchezhs/nn',
+    categories: ['Machine Learning', 'Artificial Intelligence'],
+    languages: ['C']
   },
   {
-    id: id(),
     title: 'Kmeans',
     subtitle: 'Kmeans implementation in C',
     image: p8Img1,
     link: 'https://github.com/sanchezhs/kmeans',
+    categories: ['Clustering', 'Data Science'],
+    languages: ['C']
   },
   {
-    id: id(),
     title: 'HTTP Server',
     subtitle: 'HTTP Server implementation in C',
     image: p9Img1,
     link: 'https://github.com/sanchezhs/http-server',
+    categories: ['Networking', 'Web Development'],
+    languages: ['C']
   },
 ];
+
 
 function Projects() {
   return (
@@ -93,19 +99,8 @@ function Projects() {
 
       {/* Card Section */}
       <Row className="justify-content-center">
-        {projects.map((project) => (
-          <Col key={project.id} md={4} className="mb-4">
-            <Card className="project-card shadow">
-              <Card.Img variant="top" src={project.image} alt={project.title} className="project-image" />
-              <Card.Body>
-                <Card.Title>{project.title}</Card.Title>
-                <Card.Text>{project.subtitle}</Card.Text>
-                <Button variant="primary" href={project.link} target='_blank' rel='noopener noreferrer'>
-                  View Details
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
+        {projects.map((project, id) => (
+          <Project key={id} {...project} />
         ))}
       </Row>
     </Container>
