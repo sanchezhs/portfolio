@@ -5,7 +5,6 @@
   background: linear-gradient(135deg, var(--background), var(--background-secondary));
   border-radius: 15px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
-  /*font-family: 'Poppins', sans-serif;*/
 }
 
 .projects-container h1 {

@@ -110,27 +110,6 @@ function Skills() {
         </Col>
       </Row>
 
-
-      {/* <Row> */}
-      {/*   <Col className="d-flex justify-content-center"> */}
-      {/*     <ButtonGroup aria-label="Skill categories"> */}
-      {/*       {Object.values(Category).map((category) => ( */}
-      {/*         <Button */}
-      {/*           key={category} */}
-      {/*           variant={ */}
-      {/*             selectedCategory === category ? 'primary' : 'outline-primary' */}
-      {/*           } */}
-      {/*           onClick={() => setSelectedCategory(category)} */}
-      {/*           className="mx-1 d-flex align-items-center" */}
-      {/*         > */}
-      {/*           {categoryIcons[category]} */}
-      {/*           <span className="ms-2">{category}</span> */}
-      {/*         </Button> */}
-      {/*       ))} */}
-      {/*     </ButtonGroup> */}
-      {/*   </Col> */}
-      {/* </Row> */}
-
       <Row className="justify-content-center">
         <Col md={8}>
           <Card className="skills-card shadow-sm">

@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: 'Snake Game',
-    subtitle: 'Classic snake game written in C using Raylib. This project demonstrates basic game development concepts and graphics rendering.',
+    subtitle: 'Classic snake game written in C using Raylib with dynamic difficulty',
     image: p2Img1,
     link: 'https://github.com/sanchezhs/csnake',
     categories: ['Game', 'Entertainment'],
